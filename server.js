@@ -120,7 +120,7 @@ server.get('/addEmployee', async (req, res) => {
 })
 
 
-
-server.listen(5000, () => {
+const port  = process.env.port || 5000
+server.listen(port, () => {
     console.log("server running at port 5000");
 })
