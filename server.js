@@ -5,8 +5,8 @@ server.use(express.json());
 const cors = require('cors')
 server.use(cors());
 
-const empRepo = require('./employeedetails');
 
+const empRepo = require('./employeedetails');
 const mongourl = "mongodb+srv://piyushrairai124:piyush@cluster0.gbbrsre.mongodb.net/?retryWrites=true&w=majority"
 server.get('/', (req, res) => {
     res.send("hiiiiiiiiiiiiiiiiii")
